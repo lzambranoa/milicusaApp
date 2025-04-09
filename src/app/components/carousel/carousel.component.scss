@@ -1,0 +1,26 @@
+
+@media (width > 768px) {
+    
+    .carousel-container {
+        height: 700px;
+    }
+}
+
+#carouselExampleFade {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%; /* El contenedor interno del carrusel también ocupa el 100% */
+}
+.carousel-item {
+    height: 100%; /* Cada item del carrusel ocupa el 100% */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+}
+.carousel-item img {
+    max-height: 100%; /* Asegúrate de que la imagen no exceda el alto */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin: auto; /* Centra la imagen en el item */
+}
