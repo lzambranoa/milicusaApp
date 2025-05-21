@@ -1,11 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
-$primary-color: #E98DAD;
-$secondary-color: #7A042A;
-$third-color: #E6BFCC;
-$forth-color: #4F021B;
+$primary-color: #a04e7f;
+$secondary-color: #cf9ca8;
+$third-color: #b77a68;
+$forth-color: #e2a66b;
 $white-text: #ffffff;
 $black-text: #000;
+$text-general: "Kalam", cursive;
+$text-title: "Oregano", cursive;
 
 body {
-    padding: 10px 0px
+    padding: 10px 0px;
+    font-family: $text-general;
+    line-height: 1.2;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $text-title;
+    color: $primary-color;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.button-contact {
+    background-color: $primary-color !important;
+    border: 1px solid $primary-color !important;
+
+    &:hover {
+        background-color: $secondary-color !important;
+        border: 1px solid $secondary-color !important;
+        color: $black-text;
+    }   
+}
+
+.icon-social {
+ font-size: 2rem;   
+}
+
+a {
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondary-color;
+    }   
+}
+
+.icon-social {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+// about styles
+
+.title-about {
+    font-family: $text-title;
+    text-align: left;
+    padding: 42px;
+    color: $primary-color; ;
+    
+    p {
+        font-size: 5rem !important;
+    }
+}
+
+.description-about {
+    font-size: 1.5rem;
+    padding: 42px;
+}
+
+// Media Queries
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .icon-social {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    } 
+
+    .title-about {
+
+        text-align: center;
+        padding: 0px 12px;
+
+        p {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    .description-about {
+        font-size: 1rem;
+        padding: 0px 12px;
+    }
+}
+
+
+
+
+

@@ -11,7 +11,12 @@ nav {
     a{
         text-decoration: none;
         font-size: 24px;
-        color: white !important;
+        color: #a04e7f !important;
         font-weight: bold;
+
+        &:hover{
+            font-size: 26px;
+            text-decoration: underline;
+        }
     }
 }
